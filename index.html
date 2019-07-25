@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fishing Incremental</title>
+<!-- Bootstrap CSS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="javascript/main.js" charset="utf-8" type="text/javascript"></script>
+  		<script src="lib/phaser.min.js"></script>
+		<script src="game.js"></script>
+  </head>
+  <body>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><p id="fishCaught">0 Fish Caught</p>    
+      <button onclick="catchFish()" class="btn btn-info" id="catchFish">Catch Fish</button>
+      </li>
+      <li><p id="totalGold">0 Gold</p> </li>
+      <li><p id="fisherman">0 fisherman</p> 
+      <button onclick="fishermanMake()" class="btn btn-primary" id="fishermanMake">Buy fisherman</button>
+      </li>
+      <li><p id="villagers">0 villagers</p></li>
+      <li><button onclick="villagersMake()" class="btn btn-primary">Convert fisherman to villager</button>
+      <button onclick="villagersTrade()" class="btn btn-primary">Convert villager to fisherman</button>
+      
+      <!-- <div id="myProgress"><div id="myBar"></div>
+      <div id="expeditionError"></div> -->
+      </li>
+      <li><button onclick="startExpedition()" class="btn btn-primary" id="exp">Begin Expedition</button></li>
+      <li><div id="error" class="error">Fish demo: Start Fishing!!!</div>
+      
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>
